@@ -138,11 +138,11 @@ nlu:
   examples: |
     - my email is [test@example.com]{"entity": "email"}
     - my email is [abraham.lincoln@example.com]{"entity": "email"}
-    - a[abraham.lincoln@example.com]{"entity": "email"}
+    - [abraham.lincoln@example.com]{"entity": "email"}
     - it is [abraham.lincoln@example.com]{"entity": "email"}
-    - [low]{"entity": "priority"}
-    - [medium]{"entity": "priority"}
-    - [high]{"entity": "priority"}
+    - [low]{"entity": "priority","value":"low"}
+    - [medium]{"entity": "priority","value":"medium"}
+    - [high]{"entity": "priority","value":"high"}
     - it should be a [low]{"entity": "priority"} priority
     - it should be [medium]{"entity": "priority"}
     - [escalated]{"entity": "priority", "value": "high"}
