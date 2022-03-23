@@ -11,7 +11,6 @@ pipeline:
 - name: DIETClassifier
   epochs: 300
   random_seed: 1
-- name: CRFEntityExtractor
 - name: EntitySynonymMapper
 - name: FallbackClassifier
   threshold: 0.1
