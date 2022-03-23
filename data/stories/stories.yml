@@ -1,0 +1,339 @@
+version: "3.0"
+stories:
+- story: out of scope path
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: help
+  steps:
+  - intent: help
+  - action: utter_help
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_welcome
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+# - story: incident form
+#   steps:
+#   - or:
+#     - intent: open_incident
+#     - intent: password_reset
+#     - intent: problem_email
+#   - action: open_incident_form
+#   - active_loop: open_incident_form
+#   - active_loop: null
+
+- story: incident form interrupted
+  steps:
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: open_incident_form
+  - active_loop: null
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_ask
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- story: confidential part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_confidential
+  - action: utter_confidential
+- story: confidential part without greeting yes
+  steps:
+  - intent: ask_confidential
+  - action: utter_confidential
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: confidential part without greeting no
+  steps:
+  - intent: ask_confidential
+  - action: utter_confidential
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default_answer
+- story: classification levels part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_classification_levels
+  - action: utter_classification_levels
+- story: classification levels without greeting
+  steps:
+  - intent: ask_classification_levels
+  - action: utter_classification_levels
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: classification part without greeting no
+  steps:
+  - intent: ask_classification_levels
+  - action: utter_classification_levels
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default_answer
+- story: DLP part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_dlp
+  - action: utter_dlp
+- story: DLP without greeting
+  steps:
+  - intent: ask_dlp
+  - action: utter_dlp
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: DLP part without greeting no
+  steps:
+  - intent: ask_dlp
+  - action: utter_dlp
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: Secure Upload part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_secure_upload
+  - action: utter_secure_upload
+- story: Secure Upload without greeting
+  steps:
+  - intent: ask_secure_upload
+  - action: utter_secure_upload
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: Secure Upload without greeting no
+  steps:
+  - intent: ask_secure_upload
+  - action: utter_secure_upload
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: IIRD part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_IIRD
+  - action: utter_IIRD
+- story: IIRD without greeting
+  steps:
+  - intent: ask_IIRD
+  - action: utter_IIRD
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: IIRD without greeting no
+  steps:
+  - intent: ask_IIRD
+  - action: utter_IIRD
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: Succesful Story
+  steps:
+  - intent: thanks
+  - action: utter_happy
+- story: Ask information about CCPA
+  steps:
+  - intent: ask_ccpa
+  - action: utter_ccpa_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: Diff Between CCPA and GDPR part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_diff_ccpa_gdpr
+  - action: utter_diff_ccpa_gdpr
+  - action: utter_did_that_help
+- story: Diff Between CCPA and GDPR without greeting
+  steps:
+  - intent: ask_diff_ccpa_gdpr
+  - action: utter_diff_ccpa_gdpr
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: Diff Between CCPA and GDPR without greeting no
+  steps:
+  - intent: ask_diff_ccpa_gdpr
+  - action: utter_diff_ccpa_gdpr
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: CCPA Applicable part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_ccpa_applicable
+  - action: utter_ccpa_applicable
+- story: CCPA Applicable without greeting
+  steps:
+  - intent: ask_ccpa_applicable
+  - action: utter_ccpa_applicable
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: CCPA Applicable without greeting no
+  steps:
+  - intent: ask_ccpa_applicable
+  - action: utter_ccpa_applicable
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: CCPA Timeline part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_timeline_ccpa
+  - action: utter_timeline_ccpa
+- story: CCPA Timeline without greeting
+  steps:
+  - intent: ask_timeline_ccpa
+  - action: utter_timeline_ccpa
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: CCPA Timeline without greeting no
+  steps:
+  - intent: ask_timeline_ccpa
+  - action: utter_timeline_ccpa
+  - action: utter_did_that_help
+  - intent: deny
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+- story: A sample path
+  steps:
+  - intent: ask_more_help
+  - action: further_help_form
+  - active_loop: further_help_form
+  - active_loop: null
+  - intent: affirm
+  - action: utter_goodbye
+- story: Ask information about PCI
+  steps:
+  - intent: ask_pci
+  - action: utter_pci
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_myjob
+- story: CCPA part with greeting
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask
+  - intent: ask_pci
+  - action: utter_pci
+- story: explain name
+  steps:
+  - intent: ask_more_help
+  - action: further_help_form
+  - active_loop: further_help_form
+  - slot_was_set:
+    - requested_slot: name
+  - intent: explain
+  - action: utter_explain_why_name
+  - action: further_help_form
+  - active_loop: null
+- story: explain id
+  steps:
+  - intent: ask_more_help
+  - action: further_help_form
+  - active_loop: further_help_form
+  - slot_was_set:
+    - requested_slot: id
+  - intent: explain
+  - action: utter_explain_why_id
+  - action: further_help_form
+  - active_loop: null
+- story: explain problem
+  steps:
+  - intent: ask_more_help
+  - action: further_help_form
+  - active_loop: further_help_form
+  - slot_was_set:
+    - requested_slot: problem
+  - intent: explain
+  - action: utter_explain_why_problem
+  - action: further_help_form
+  - active_loop: null
+- story: market share example
+  steps:
+  - intent: ask_marketshare
+  - action: utter_marketshare
+- story: company_deliveries
+  steps:
+  - intent: company_deliveries
+  - action: utter_company_deliveries
+- story: company_mitigation
+  steps:
+  - intent: company_mitigation
+  - action: utter_company_mitigation
+- story: faq_curve
+  steps:
+  - intent: faq_curve
+  - action: utter_faq_curve

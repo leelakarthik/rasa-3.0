@@ -1,0 +1,1396 @@
+[
+  {
+    "sender_id": "1bed1c0ac72f4988b0da892161b7107b",
+    "slots": {
+      "email": null,
+      "id": null,
+      "incident_title": null,
+      "name": null,
+      "priority": null,
+      "problem": null,
+      "problem_description": null,
+      "requested_slot": null
+    },
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": null,
+    "followup_action": "action_listen",
+    "paused": false,
+    "events": [],
+    "latest_input_channel": null,
+    "active_form": {},
+    "latest_action_name": null
+  },
+  {
+    "sender_id": "1bed1c0ac72f4988b0da892161b7107b",
+    "slots": {
+      "email": null,
+      "id": null,
+      "incident_title": null,
+      "name": null,
+      "priority": null,
+      "problem": null,
+      "problem_description": null,
+      "requested_slot": null
+    },
+    "latest_message": {
+      "intent": {
+        "name": "greet",
+        "confidence": 0.9455261826515198
+      },
+      "entities": [],
+      "intent_ranking": [
+        {
+          "name": "greet",
+          "confidence": 0.9455261826515198
+        },
+        {
+          "name": "mood_great",
+          "confidence": 0.01572662591934204
+        },
+        {
+          "name": "None",
+          "confidence": 0.008241179399192333
+        },
+        {
+          "name": "company_wfh",
+          "confidence": 0.005982834380120039
+        },
+        {
+          "name": "password_reset",
+          "confidence": 0.004614916630089283
+        },
+        {
+          "name": "out_of_scope",
+          "confidence": 0.004374570678919554
+        },
+        {
+          "name": "company_deliveries",
+          "confidence": 0.0043261731043457985
+        },
+        {
+          "name": "bot_challenge",
+          "confidence": 0.0040069823153316975
+        },
+        {
+          "name": "faq_testing",
+          "confidence": 0.003748424584046006
+        },
+        {
+          "name": "faq_curve",
+          "confidence": 0.0034521054476499557
+        }
+      ],
+      "text": "hi"
+    },
+    "latest_event_time": 1647353630.8276162,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1647353630.554961
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353630.7710102,
+        "text": "hi",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.9455261826515198
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.9455261826515198
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.01572662591934204
+            },
+            {
+              "name": "None",
+              "confidence": 0.008241179399192333
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.005982834380120039
+            },
+            {
+              "name": "password_reset",
+              "confidence": 0.004614916630089283
+            },
+            {
+              "name": "out_of_scope",
+              "confidence": 0.004374570678919554
+            },
+            {
+              "name": "company_deliveries",
+              "confidence": 0.0043261731043457985
+            },
+            {
+              "name": "bot_challenge",
+              "confidence": 0.0040069823153316975
+            },
+            {
+              "name": "faq_testing",
+              "confidence": 0.003748424584046006
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.0034521054476499557
+            }
+          ],
+          "text": "hi"
+        },
+        "input_channel": "cmdline",
+        "message_id": "481a376c0ac443a98cb2e78aab94adbc",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8056133,
+        "name": "utter_greet",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353630.8056133,
+        "text": "Hey! How are you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": [
+            {
+              "payload": "great",
+              "title": "I am doing great."
+            },
+            {
+              "payload": "super sad",
+              "title": "I am sad"
+            }
+          ],
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8276162,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.6174646615982056
+      }
+    ],
+    "latest_input_channel": "cmdline",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "1bed1c0ac72f4988b0da892161b7107b",
+    "slots": {
+      "email": null,
+      "id": null,
+      "incident_title": null,
+      "name": null,
+      "priority": null,
+      "problem": null,
+      "problem_description": null,
+      "requested_slot": null
+    },
+    "latest_message": {
+      "intent": {
+        "name": "mood_unhappy",
+        "confidence": 0.7504920959472656
+      },
+      "entities": [],
+      "intent_ranking": [
+        {
+          "name": "mood_unhappy",
+          "confidence": 0.7504920959472656
+        },
+        {
+          "name": "company_open",
+          "confidence": 0.06790927797555923
+        },
+        {
+          "name": "open_incident",
+          "confidence": 0.039714206010103226
+        },
+        {
+          "name": "faq_curve",
+          "confidence": 0.029020272195339203
+        },
+        {
+          "name": "inform",
+          "confidence": 0.026657167822122574
+        },
+        {
+          "name": "ask_timeline_ccpa",
+          "confidence": 0.02564449980854988
+        },
+        {
+          "name": "company_wfh",
+          "confidence": 0.019994696602225304
+        },
+        {
+          "name": "faq_vulnerable",
+          "confidence": 0.014081942848861217
+        },
+        {
+          "name": "ask_more_help",
+          "confidence": 0.01372524257749319
+        },
+        {
+          "name": "mood_great",
+          "confidence": 0.012760584242641926
+        }
+      ],
+      "text": "super sad"
+    },
+    "latest_event_time": 1647353639.3558786,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1647353630.554961
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353630.7710102,
+        "text": "hi",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.9455261826515198
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.9455261826515198
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.01572662591934204
+            },
+            {
+              "name": "None",
+              "confidence": 0.008241179399192333
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.005982834380120039
+            },
+            {
+              "name": "password_reset",
+              "confidence": 0.004614916630089283
+            },
+            {
+              "name": "out_of_scope",
+              "confidence": 0.004374570678919554
+            },
+            {
+              "name": "company_deliveries",
+              "confidence": 0.0043261731043457985
+            },
+            {
+              "name": "bot_challenge",
+              "confidence": 0.0040069823153316975
+            },
+            {
+              "name": "faq_testing",
+              "confidence": 0.003748424584046006
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.0034521054476499557
+            }
+          ],
+          "text": "hi"
+        },
+        "input_channel": "cmdline",
+        "message_id": "481a376c0ac443a98cb2e78aab94adbc",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8056133,
+        "name": "utter_greet",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353630.8056133,
+        "text": "Hey! How are you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": [
+            {
+              "payload": "great",
+              "title": "I am doing great."
+            },
+            {
+              "payload": "super sad",
+              "title": "I am sad"
+            }
+          ],
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8276162,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.6174646615982056
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353639.2873688,
+        "text": "super sad",
+        "parse_data": {
+          "intent": {
+            "name": "mood_unhappy",
+            "confidence": 0.7504920959472656
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "mood_unhappy",
+              "confidence": 0.7504920959472656
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.06790927797555923
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.039714206010103226
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.029020272195339203
+            },
+            {
+              "name": "inform",
+              "confidence": 0.026657167822122574
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.02564449980854988
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.019994696602225304
+            },
+            {
+              "name": "faq_vulnerable",
+              "confidence": 0.014081942848861217
+            },
+            {
+              "name": "ask_more_help",
+              "confidence": 0.01372524257749319
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.012760584242641926
+            }
+          ],
+          "text": "super sad"
+        },
+        "input_channel": "cmdline",
+        "message_id": "e8683cc1094140dd85ebce062a845653",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.306498,
+        "name": "utter_cheer_up",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.306498,
+        "text": "Here is something to cheer you up:",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "https://i.imgur.com/nGF1K8f.jpg",
+          "image": "https://i.imgur.com/nGF1K8f.jpg",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3316524,
+        "name": "utter_did_that_help",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.3316524,
+        "text": "Did that help you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3558786,
+        "name": "action_listen",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "cmdline",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "1bed1c0ac72f4988b0da892161b7107b",
+    "slots": {
+      "email": null,
+      "id": null,
+      "incident_title": null,
+      "name": null,
+      "priority": null,
+      "problem": null,
+      "problem_description": null,
+      "requested_slot": null
+    },
+    "latest_message": {
+      "intent": {
+        "name": "ask_ccpa",
+        "confidence": 0.8138018846511841
+      },
+      "entities": [
+        {
+          "entity": "act",
+          "start": 0,
+          "end": 4,
+          "extractor": "DIETClassifier",
+          "value": " California Consumer Privacy Act",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        },
+        {
+          "start": 0,
+          "end": 4,
+          "value": " California Consumer Privacy Act",
+          "entity": "act",
+          "confidence": 0.9515358929562651,
+          "extractor": "CRFEntityExtractor",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ],
+      "intent_ranking": [
+        {
+          "name": "ask_ccpa",
+          "confidence": 0.8138018846511841
+        },
+        {
+          "name": "ask_timeline_ccpa",
+          "confidence": 0.044721126556396484
+        },
+        {
+          "name": "inform",
+          "confidence": 0.039432380348443985
+        },
+        {
+          "name": "ask_diff_ccpa_gdpr",
+          "confidence": 0.022504599764943123
+        },
+        {
+          "name": "company_open",
+          "confidence": 0.0195965226739645
+        },
+        {
+          "name": "faq_masks",
+          "confidence": 0.019365672022104263
+        },
+        {
+          "name": "deny",
+          "confidence": 0.0164941493421793
+        },
+        {
+          "name": "ask_more_help",
+          "confidence": 0.010152132250368595
+        },
+        {
+          "name": "mood_great",
+          "confidence": 0.007154468912631273
+        },
+        {
+          "name": "open_incident",
+          "confidence": 0.0067770592868328094
+        }
+      ],
+      "text": "ccpa"
+    },
+    "latest_event_time": 1647353646.7899573,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1647353630.554961
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353630.7710102,
+        "text": "hi",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.9455261826515198
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.9455261826515198
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.01572662591934204
+            },
+            {
+              "name": "None",
+              "confidence": 0.008241179399192333
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.005982834380120039
+            },
+            {
+              "name": "password_reset",
+              "confidence": 0.004614916630089283
+            },
+            {
+              "name": "out_of_scope",
+              "confidence": 0.004374570678919554
+            },
+            {
+              "name": "company_deliveries",
+              "confidence": 0.0043261731043457985
+            },
+            {
+              "name": "bot_challenge",
+              "confidence": 0.0040069823153316975
+            },
+            {
+              "name": "faq_testing",
+              "confidence": 0.003748424584046006
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.0034521054476499557
+            }
+          ],
+          "text": "hi"
+        },
+        "input_channel": "cmdline",
+        "message_id": "481a376c0ac443a98cb2e78aab94adbc",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8056133,
+        "name": "utter_greet",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353630.8056133,
+        "text": "Hey! How are you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": [
+            {
+              "payload": "great",
+              "title": "I am doing great."
+            },
+            {
+              "payload": "super sad",
+              "title": "I am sad"
+            }
+          ],
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8276162,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.6174646615982056
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353639.2873688,
+        "text": "super sad",
+        "parse_data": {
+          "intent": {
+            "name": "mood_unhappy",
+            "confidence": 0.7504920959472656
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "mood_unhappy",
+              "confidence": 0.7504920959472656
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.06790927797555923
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.039714206010103226
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.029020272195339203
+            },
+            {
+              "name": "inform",
+              "confidence": 0.026657167822122574
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.02564449980854988
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.019994696602225304
+            },
+            {
+              "name": "faq_vulnerable",
+              "confidence": 0.014081942848861217
+            },
+            {
+              "name": "ask_more_help",
+              "confidence": 0.01372524257749319
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.012760584242641926
+            }
+          ],
+          "text": "super sad"
+        },
+        "input_channel": "cmdline",
+        "message_id": "e8683cc1094140dd85ebce062a845653",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.306498,
+        "name": "utter_cheer_up",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.306498,
+        "text": "Here is something to cheer you up:",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "https://i.imgur.com/nGF1K8f.jpg",
+          "image": "https://i.imgur.com/nGF1K8f.jpg",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3316524,
+        "name": "utter_did_that_help",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.3316524,
+        "text": "Did that help you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3558786,
+        "name": "action_listen",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353646.7437603,
+        "text": "ccpa",
+        "parse_data": {
+          "intent": {
+            "name": "ask_ccpa",
+            "confidence": 0.8138018846511841
+          },
+          "entities": [
+            {
+              "entity": "act",
+              "start": 0,
+              "end": 4,
+              "extractor": "DIETClassifier",
+              "value": " California Consumer Privacy Act",
+              "processors": [
+                "EntitySynonymMapper"
+              ]
+            },
+            {
+              "start": 0,
+              "end": 4,
+              "value": " California Consumer Privacy Act",
+              "entity": "act",
+              "confidence": 0.9515358929562651,
+              "extractor": "CRFEntityExtractor",
+              "processors": [
+                "EntitySynonymMapper"
+              ]
+            }
+          ],
+          "intent_ranking": [
+            {
+              "name": "ask_ccpa",
+              "confidence": 0.8138018846511841
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.044721126556396484
+            },
+            {
+              "name": "inform",
+              "confidence": 0.039432380348443985
+            },
+            {
+              "name": "ask_diff_ccpa_gdpr",
+              "confidence": 0.022504599764943123
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.0195965226739645
+            },
+            {
+              "name": "faq_masks",
+              "confidence": 0.019365672022104263
+            },
+            {
+              "name": "deny",
+              "confidence": 0.0164941493421793
+            },
+            {
+              "name": "ask_more_help",
+              "confidence": 0.010152132250368595
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.007154468912631273
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.0067770592868328094
+            }
+          ],
+          "text": "ccpa"
+        },
+        "input_channel": "cmdline",
+        "message_id": "66fc18db9e464bf9b2ac0427a6245dde",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353646.7657588,
+        "name": "utter_ccpa_info",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.9585692286491394
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353646.7657588,
+        "text": "The California Consumer Privacy Act (CCPA) is the most comprehensive privacy legislation in the United States. Like the General Data Protection Regulation (GDPR), it requires companies to take certain steps to protect personal information and make available personal information rights to individuals.",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353646.7899573,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.5911121368408203
+      }
+    ],
+    "latest_input_channel": "cmdline",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "1bed1c0ac72f4988b0da892161b7107b",
+    "slots": {
+      "email": null,
+      "id": null,
+      "incident_title": null,
+      "name": null,
+      "priority": null,
+      "problem": null,
+      "problem_description": null,
+      "requested_slot": null
+    },
+    "latest_message": {
+      "intent": {
+        "name": "ask_more_help",
+        "confidence": 0.9463551640510559
+      },
+      "entities": [],
+      "intent_ranking": [
+        {
+          "name": "ask_more_help",
+          "confidence": 0.9463551640510559
+        },
+        {
+          "name": "faq_vulnerable",
+          "confidence": 0.026675386354327202
+        },
+        {
+          "name": "company_open",
+          "confidence": 0.005786384455859661
+        },
+        {
+          "name": "ask_timeline_ccpa",
+          "confidence": 0.004067868925631046
+        },
+        {
+          "name": "ask_ccpa_applicable",
+          "confidence": 0.0037416918203234673
+        },
+        {
+          "name": "ask_classification_levels",
+          "confidence": 0.0032590425107628107
+        },
+        {
+          "name": "ask_diff_ccpa_gdpr",
+          "confidence": 0.002932610921561718
+        },
+        {
+          "name": "open_incident",
+          "confidence": 0.0029026095289736986
+        },
+        {
+          "name": "faq_vaccine",
+          "confidence": 0.0024923637975007296
+        },
+        {
+          "name": "mood_unhappy",
+          "confidence": 0.0017867976566776633
+        }
+      ],
+      "text": "raise a request"
+    },
+    "latest_event_time": 1647354029.6559765,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1647353630.554961
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.554961,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353630.7710102,
+        "text": "hi",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.9455261826515198
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.9455261826515198
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.01572662591934204
+            },
+            {
+              "name": "None",
+              "confidence": 0.008241179399192333
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.005982834380120039
+            },
+            {
+              "name": "password_reset",
+              "confidence": 0.004614916630089283
+            },
+            {
+              "name": "out_of_scope",
+              "confidence": 0.004374570678919554
+            },
+            {
+              "name": "company_deliveries",
+              "confidence": 0.0043261731043457985
+            },
+            {
+              "name": "bot_challenge",
+              "confidence": 0.0040069823153316975
+            },
+            {
+              "name": "faq_testing",
+              "confidence": 0.003748424584046006
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.0034521054476499557
+            }
+          ],
+          "text": "hi"
+        },
+        "input_channel": "cmdline",
+        "message_id": "481a376c0ac443a98cb2e78aab94adbc",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8056133,
+        "name": "utter_greet",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353630.8056133,
+        "text": "Hey! How are you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": [
+            {
+              "payload": "great",
+              "title": "I am doing great."
+            },
+            {
+              "payload": "super sad",
+              "title": "I am sad"
+            }
+          ],
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353630.8276162,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.6174646615982056
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353639.2873688,
+        "text": "super sad",
+        "parse_data": {
+          "intent": {
+            "name": "mood_unhappy",
+            "confidence": 0.7504920959472656
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "mood_unhappy",
+              "confidence": 0.7504920959472656
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.06790927797555923
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.039714206010103226
+            },
+            {
+              "name": "faq_curve",
+              "confidence": 0.029020272195339203
+            },
+            {
+              "name": "inform",
+              "confidence": 0.026657167822122574
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.02564449980854988
+            },
+            {
+              "name": "company_wfh",
+              "confidence": 0.019994696602225304
+            },
+            {
+              "name": "faq_vulnerable",
+              "confidence": 0.014081942848861217
+            },
+            {
+              "name": "ask_more_help",
+              "confidence": 0.01372524257749319
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.012760584242641926
+            }
+          ],
+          "text": "super sad"
+        },
+        "input_channel": "cmdline",
+        "message_id": "e8683cc1094140dd85ebce062a845653",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.306498,
+        "name": "utter_cheer_up",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.306498,
+        "text": "Here is something to cheer you up:",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "https://i.imgur.com/nGF1K8f.jpg",
+          "image": "https://i.imgur.com/nGF1K8f.jpg",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3316524,
+        "name": "utter_did_that_help",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353639.3316524,
+        "text": "Did that help you?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353639.3558786,
+        "name": "action_listen",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1647353646.7437603,
+        "text": "ccpa",
+        "parse_data": {
+          "intent": {
+            "name": "ask_ccpa",
+            "confidence": 0.8138018846511841
+          },
+          "entities": [
+            {
+              "entity": "act",
+              "start": 0,
+              "end": 4,
+              "extractor": "DIETClassifier",
+              "value": " California Consumer Privacy Act",
+              "processors": [
+                "EntitySynonymMapper"
+              ]
+            },
+            {
+              "start": 0,
+              "end": 4,
+              "value": " California Consumer Privacy Act",
+              "entity": "act",
+              "confidence": 0.9515358929562651,
+              "extractor": "CRFEntityExtractor",
+              "processors": [
+                "EntitySynonymMapper"
+              ]
+            }
+          ],
+          "intent_ranking": [
+            {
+              "name": "ask_ccpa",
+              "confidence": 0.8138018846511841
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.044721126556396484
+            },
+            {
+              "name": "inform",
+              "confidence": 0.039432380348443985
+            },
+            {
+              "name": "ask_diff_ccpa_gdpr",
+              "confidence": 0.022504599764943123
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.0195965226739645
+            },
+            {
+              "name": "faq_masks",
+              "confidence": 0.019365672022104263
+            },
+            {
+              "name": "deny",
+              "confidence": 0.0164941493421793
+            },
+            {
+              "name": "ask_more_help",
+              "confidence": 0.010152132250368595
+            },
+            {
+              "name": "mood_great",
+              "confidence": 0.007154468912631273
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.0067770592868328094
+            }
+          ],
+          "text": "ccpa"
+        },
+        "input_channel": "cmdline",
+        "message_id": "66fc18db9e464bf9b2ac0427a6245dde",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353646.7657588,
+        "name": "utter_ccpa_info",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.9585692286491394
+      },
+      {
+        "event": "bot",
+        "timestamp": 1647353646.7657588,
+        "text": "The California Consumer Privacy Act (CCPA) is the most comprehensive privacy legislation in the United States. Like the General Data Protection Regulation (GDPR), it requires companies to take certain steps to protect personal information and make available personal information rights to individuals.",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647353646.7899573,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.5911121368408203
+      },
+      {
+        "event": "user",
+        "timestamp": 1647354029.590927,
+        "text": "raise a request",
+        "parse_data": {
+          "intent": {
+            "name": "ask_more_help",
+            "confidence": 0.9463551640510559
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "ask_more_help",
+              "confidence": 0.9463551640510559
+            },
+            {
+              "name": "faq_vulnerable",
+              "confidence": 0.026675386354327202
+            },
+            {
+              "name": "company_open",
+              "confidence": 0.005786384455859661
+            },
+            {
+              "name": "ask_timeline_ccpa",
+              "confidence": 0.004067868925631046
+            },
+            {
+              "name": "ask_ccpa_applicable",
+              "confidence": 0.0037416918203234673
+            },
+            {
+              "name": "ask_classification_levels",
+              "confidence": 0.0032590425107628107
+            },
+            {
+              "name": "ask_diff_ccpa_gdpr",
+              "confidence": 0.002932610921561718
+            },
+            {
+              "name": "open_incident",
+              "confidence": 0.0029026095289736986
+            },
+            {
+              "name": "faq_vaccine",
+              "confidence": 0.0024923637975007296
+            },
+            {
+              "name": "mood_unhappy",
+              "confidence": 0.0017867976566776633
+            }
+          ],
+          "text": "raise a request"
+        },
+        "input_channel": "cmdline",
+        "message_id": "e21fd5c56bc445ceb916aa37ce6b562f",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1647354029.6319835,
+        "name": "further_help_form",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "action",
+        "timestamp": 1647354029.6559765,
+        "name": "action_listen",
+        "policy": "policy_0_AugmentedMemoizationPolicy",
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "cmdline",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  }
+]

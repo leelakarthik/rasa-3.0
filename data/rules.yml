@@ -1,0 +1,20 @@
+version: "3.0"
+rules:
+- rule: Rule to handle messages with low NLU confidence (automated conversion from 'FallbackPolicy')
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+- rule: Activate incident form
+  steps:
+  - intent: open_incident
+  - action: open_incident_form
+  - active_loop: open_incident_form
+- rule: incident form interrupted
+  steps:
+  - intent: password_reset
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - intent: help
+  - action: utter_help
+  - action: open_incident_form
+  - active_loop: null
