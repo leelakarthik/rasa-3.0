@@ -9,6 +9,7 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
+  model_confidence: linear_norm
   constrain_similarities: True
   epochs: 300
   random_seed: 1
