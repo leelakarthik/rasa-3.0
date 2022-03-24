@@ -1,5 +1,0 @@
-https://github.com/tuhinssam/covid19-rasa-chatbot/blob/master/domain.yml
-https://github.com/leelamanikanta/Rasa_Covid19_FAQ_ChatBot/blob/master/data/nlu.md
-https://github.com/sandmadh/RasaChatbot_iNeuronCovidInfo/blob/master/data/nlu.md
-https://github.com/AshuOPragmatikosThrylos/COVID_19_FAQ_chatbot_RasaNLU/blob/master/code/data/nlu.md
-https://covid19api.com/

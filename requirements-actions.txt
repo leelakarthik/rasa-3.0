@@ -1,8 +1,0 @@
-pytablewriter
-requests
-ruamel.yaml
-# google-auth==2.6.2
-prompt-toolkit
-questionary
-SQLAlchemy
-urllib3
